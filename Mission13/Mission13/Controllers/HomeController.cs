@@ -19,21 +19,10 @@ namespace Mission13.Controllers
             _repo = temp;
         }
 
-        //public IActionResult Index(int teamId = 0)
-        //{
-        //    //var b = _repo.Bowlers.ToList();
-        //    //Include actually does the join
-        //    // .Include(x => "Teams")
-        //    var b = _repo.Bowlers
-        //            .Where(b => b.TeamID == teamId || teamId == 0)
-        //            .OrderBy(b => b.BowlerLastName).ToList();
-        //    return View(b);
-        //}
         public IActionResult Index(string teamName)
         {
-            //var b = _repo.Bowlers.ToList();
-            //Include actually does the join
-            // .Include(x => "Teams")
+            ViewBag.SelectedTeam = RouteData?.Values["teamName"];
+            ViewBag.Teams = _repo.Teams.ToList();
             var b = _repo.Bowlers.Include(b => b.Team)
                     .Where(b => b.Team.TeamName == teamName || teamName == null)
                     .OrderBy(b => b.BowlerLastName).ToList();
@@ -72,17 +61,9 @@ namespace Mission13.Controllers
 
             _repo.DeleteBowler(b);
 
+            // Use redirect to load page
             return RedirectToAction("Index");
-            //return View(b);
         }
-
-        //[HttpPost]
-        //public IActionResult Delete(Bowler b)
-        //{
-        //    _repo.DeleteBowler(b);
-
-        //    return RedirectToAction("Index");
-        //}
 
         [HttpGet]
         public IActionResult Create()

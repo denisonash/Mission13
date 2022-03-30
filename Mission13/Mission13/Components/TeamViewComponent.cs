@@ -16,7 +16,8 @@ namespace Mission13.Components
 
         public IViewComponentResult Invoke()
         {
-            ViewBag.SelectedTeam = RouteData?.Values["teams"];
+            //Get all the teams and send the selected team name to the route
+            ViewBag.SelectedTeam = RouteData?.Values["teamName"];
 
             var teams = _repo.Teams.Select(t => t.TeamName)
                 .Distinct()

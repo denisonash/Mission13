@@ -56,3 +56,4 @@
 /Users/ashleydenison/Documents/GitHub/Mission13/Mission13/Mission13/obj/Debug/netcoreapp3.1/Mission13.genruntimeconfig.cache
 /Users/ashleydenison/Documents/GitHub/Mission13/Mission13/Mission13/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/Team/Default.cshtml.g.cs
 /Users/ashleydenison/Documents/GitHub/Mission13/Mission13/Mission13/obj/Debug/netcoreapp3.1/Razor/Views/Home/BowlerInfo.cshtml.g.cs
+/Users/ashleydenison/Documents/GitHub/Mission13/Mission13/Mission13/bin/Debug/netcoreapp3.1/libman.json
