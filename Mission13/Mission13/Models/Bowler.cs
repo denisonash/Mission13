@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Mission13.Models
 {
@@ -25,6 +26,8 @@ namespace Mission13.Models
 
         public string BowlerPhoneNumber { get; set; }
 
+        [ForeignKey("TeamID")]
         public int TeamID { get; set; }
+        public Team Team { get; set; }
     }
 }

@@ -1,28 +1,35 @@
 ﻿<Properties StartupConfiguration="{9D9BDD53-C0F8-47E2-8E30-96DCFDC489C1}|Default">
   <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="Mission13/Controllers/HomeController.cs" Line="24" Column="28" />
-      <File FileName="Mission13/appsettings.json" Line="10" Column="25" />
-      <File FileName="Mission13/Models/BowlersDbContext.cs" Line="12" Column="49" />
-      <File FileName="Mission13/Models/Bowler.cs" Line="28" Column="38" />
-      <File FileName="Mission13/Startup.cs" Line="35" Column="75" />
-      <File FileName="Mission13/Views/Home/Index.cshtml" Line="15" Column="14" />
-      <File FileName="Mission13/Models/IBowlersRepository.cs" Line="8" Column="42" />
-      <File FileName="Mission13/Models/EFBowlersRepository.cs" Line="15" Column="63" />
+      <File FileName="Mission13/Controllers/HomeController.cs" Line="38" Column="60" />
+      <File FileName="Mission13/Models/BowlersDbContext.cs" Line="14" Column="47" />
+      <File FileName="Mission13/Startup.cs" Line="66" Column="55" />
+      <File FileName="Mission13/Views/Home/Index.cshtml" Line="18" Column="6" />
+      <File FileName="Mission13/Models/IBowlersRepository.cs" Line="9" Column="38" />
+      <File FileName="Mission13/Models/EFBowlersRepository.cs" Line="34" Column="1" />
+      <File FileName="Mission13/Views/Shared/Components/Team/Default.cshtml" Line="14" Column="6" />
+      <File FileName="Mission13/Models/Bowler.cs" Line="31" Column="39" />
+      <File FileName="Mission13/Views/Home/BowlerInfo.cshtml" Line="14" Column="1" />
+      <File FileName="Mission13/appsettings.json" Line="13" Column="2" />
+      <File FileName="Mission13/libman.json" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Mission13" expanded="True">
             <Node name="Mission13" expanded="True">
+              <Node name="Components" expanded="True" />
               <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True">
-                  <Node name="Index.cshtml" selected="True" />
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="Components" expanded="True">
+                    <Node name="Team" expanded="True" />
+                  </Node>
                 </Node>
-                <Node name="Shared" expanded="True" />
               </Node>
+              <Node name="libman.json" selected="True" />
             </Node>
           </Node>
         </State>

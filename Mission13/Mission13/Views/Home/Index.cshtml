@@ -11,7 +11,11 @@
     {
         <li>@b.BowlerFirstName @b.BowlerMiddleInit @b.BowlerLastName |
             @b.BowlerAddress @b.BowlerCity, @b.BowlerState @b.BowlerZip |
-            @b.BowlerPhoneNumber
+            @b.BowlerPhoneNumber |
+            <a asp-controller="Home" asp-action="Edit" asp-route-bowlerid="@b.BowlerID">Edit</a>
+            <a asp-controller="Home" asp-action="Delete" asp-route-bowlerid="@b.BowlerID">Delete</a>
         </li>
     }
 </ul>
+
+<a asp-controller="Home" asp-action="Create">Add Bowler</a>
